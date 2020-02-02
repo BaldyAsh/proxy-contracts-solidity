@@ -1,0 +1,18 @@
+{
+  "name": "upgradeable-contracts-solidity",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "ethereum-waffle": "^2.0.14",
+    "ethers": "^4.0.33",
+    "mocha": "^6.2.0",
+    "truffle": "^5.0.24"
+  },
+  "scripts": {
+    "test": "npx waffle && npx mocha"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2",
+    "truffle-hdwallet-provider": "^1.0.6"
+  }
+}
