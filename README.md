@@ -37,6 +37,22 @@ function setImplementationAndCall(address _newImplementation, bytes calldata _ne
 
 You can use any function of the implementation contract as usual, however, the address should be the address of its proxy contract. This is because the implementation functions will be called using the delegate call from the context of the proxy contract using the fallback function.
 
+## Install and use
+1. Install [node.js](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/getting-started/install) if you haven't yet
+2. Install package
+```sh
+yarn add upgradeable-contracts-solidity
+```
+3. Import contracts into new .sol file, save and deploy it. Feel free to inherit Proxy contract and add your functionality (DO NOT add storage variables if you don't completely understand how it works) 
+```
+pragma solidity ^0.5.0;
+
+import "../node_modules/upgradeable-contracts-solidity/contracts/Proxy.sol";
+
+contract YoursContract is Proxy {}
+```
+4. Deploy and set implementation as described above
+
 ## Build and test
 1. Install [node.js](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/getting-started/install) if you haven't yet
 2. Clone repo

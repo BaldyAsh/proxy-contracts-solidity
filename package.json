@@ -1,6 +1,6 @@
 {
   "name": "upgradeable-contracts-solidity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Upgradeable Smart Contracts for Solidity",
   "files": [
     "/contracts/*.sol",
@@ -45,6 +45,5 @@
     "solhint": "^2.1.2",
     "solhint-plugin-prettier": "^0.0.3",
     "uuid": "^3.3.2"
-  },
-  "dependencies": {}
+  }
 }
