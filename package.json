@@ -1,5 +1,36 @@
 {
   "name": "upgradeable-contracts-solidity",
+  "version": "1.0.0",
+  "description": "Upgradeable Smart Contracts for Solidity",
+  "files": [
+    "/contracts/*.sol",
+    "/build/*.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BaldyAsh/upgradeable-contracts-solidity.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security",
+    "upgradeable",
+    "proxy"
+  ],
+  "author": "Anton Grigorev <antongrigorjev2010@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BaldyAsh/upgradeable-contracts-solidity/issues"
+  },
+  "homepage": "https://github.com/BaldyAsh/upgradeable-contracts-solidity",
+  "scripts": {
+    "build": "waffle waffle-config.json",
+    "test": "yarn build && mocha",
+    "lint:solidity": "solhint contracts/*.sol",
+    "prettier:solidity": "prettier --write contracts/*.sol"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "dotenv": "^8.0.0",
@@ -15,10 +46,5 @@
     "solhint-plugin-prettier": "^0.0.3",
     "uuid": "^3.3.2"
   },
-  "scripts": {
-    "build": "waffle waffle-config.json",
-    "test": "yarn build && mocha",
-    "lint:solidity": "solhint contracts/*.sol",
-    "prettier:solidity": "prettier --write contracts/*.sol"
-  }
+  "dependencies": {}
 }
