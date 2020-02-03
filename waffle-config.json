@@ -1,7 +1,6 @@
 {
     "sourcesPath": "./contracts",
     "targetPath": "./build",
-    "solcVersion": "v0.6.2",
     "compilerOptions":
     {
         "optimizer": {
