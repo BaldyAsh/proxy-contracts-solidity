@@ -37,6 +37,23 @@ function setImplementationAndCall(address _newImplementation, bytes calldata _ne
 
 You can use any function of the implementation contract as usual, however, the address should be the address of its proxy contract. This is because the implementation functions will be called using the delegate call from the context of the proxy contract using the fallback function.
 
+## Build and test
+1. Install [node.js](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/getting-started/install) if you haven't yet
+2. Clone repo
+```sh
+git clone https://github.com/BaldyAsh/upgradeable-contracts-solidity
+```
+3. Go to downloaded folder and install dependencies
+```sh
+yarn
+```
+4. Make sure that your Ethereum client is working (you can use whatever you want: your local chain pr official remote Ethereum chains).
+5. Create .env file. Feel free to copy .dev.env. Set your chain rpc url.
+6. Compile contracts and run tests
+```sh
+yarn test
+```
+
 ## Credits
 
 Anton Grigorev, [@baldyash](https://github.com/BaldyAsh)
