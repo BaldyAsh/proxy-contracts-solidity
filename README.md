@@ -1,6 +1,6 @@
-# Upgradeable Contracts Solidity
+# Proxy Contracts Solidity
 
-Solidity upgradeable contracts proxy based on unstructured storage pattern.
+Solidity proxy contracts based on unstructured storage pattern. Upgrade your contracts safely.
 
 Read more about proxy patterns from [OpenZeppelin article](https://blog.openzeppelin.com/proxy-patterns/).
 
